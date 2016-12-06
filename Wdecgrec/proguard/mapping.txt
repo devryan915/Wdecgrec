@@ -25259,61 +25259,52 @@ thoth.holter.ecg_010.login.ResetPwdActivity$3 -> thoth.holter.ecg_010.login.j:
     void doError(java.lang.String) -> a
     void doSuccess(java.lang.Object) -> a
 thoth.holter.ecg_010.main.EcgActivity -> thoth.holter.ecg_010.main.EcgActivity:
-    com.broadchance.ecgview.ECGGLSurfaceView ecgGLSurfaceViewChannelMII -> p
-    android.view.View rbSpeed -> q
-    android.view.View rbRage -> r
-    android.widget.TextView ecg_curhearrate -> s
-    android.widget.TextView ecg_curspeedvalue -> t
-    android.widget.TextView tvCurDate -> u
-    android.widget.TextView tvCurTime -> v
-    android.widget.TextView tvRunTime -> w
-    android.view.View buttonTitleBack -> x
-    int GRID_VNUM_20 -> y
-    int GRID_VNUM_30 -> z
-    int GRID_VNUM_60 -> A
+    com.broadchance.ecgview.ECGGLSurfaceView ecgGLSurfaceViewChannelMII -> k
+    android.view.View rbSpeed -> l
+    android.view.View rbRage -> m
+    android.widget.TextView ecg_curhearrate -> n
+    android.widget.TextView ecg_curspeedvalue -> o
+    android.widget.TextView tvCurDate -> p
+    android.widget.TextView tvCurTime -> q
+    android.widget.TextView tvRunTime -> r
+    android.view.View buttonTitleBack -> s
+    int GRID_VNUM_20 -> t
+    int GRID_VNUM_30 -> u
+    int GRID_VNUM_60 -> v
     int UPDATE_MIICANVAS -> d
-    java.util.concurrent.LinkedBlockingQueue miiQueue -> B
+    java.util.concurrent.LinkedBlockingQueue miiQueue -> w
     long totalReceivePoints -> e
-    java.util.concurrent.ScheduledExecutorService executor -> C
-    java.util.concurrent.ExecutorService executorReceive -> D
+    java.util.concurrent.ScheduledExecutorService executor -> x
+    java.util.concurrent.ExecutorService executorReceive -> y
     java.lang.String TAG -> f
     thoth.holter.ecg_010.main.EcgActivity Instance -> g
-    int hearRate -> E
-    long lastTime -> h
-    long lastMIITime -> i
-    long lastMIIOffTime -> j
-    boolean isStopMII -> F
-    android.os.Handler handler -> G
-    java.text.SimpleDateFormat sdf -> H
-    android.os.Handler handlerTime -> I
-    android.os.Messenger mMesg -> J
-    long count -> k
-    android.content.BroadcastReceiver mGattUpdateReceiver -> K
-    android.bluetooth.BluetoothAdapter mBluetoothAdapter -> L
-    android.bluetooth.BluetoothManager mBluetoothManager -> M
-    java.util.Date runTime -> N
-    android.content.BroadcastReceiver testReceiver -> O
-    android.os.Handler testHandler -> l
-    int hexIndex -> m
-    int chkCount -> n
-    java.lang.String[] ecgDataAs -> o
-    java.util.concurrent.atomic.AtomicBoolean atomicBooleanDraw -> P
+    int hearRate -> z
+    long lastMIIOffTime -> h
+    boolean isStopMII -> A
+    android.os.Handler handler -> B
+    java.text.SimpleDateFormat sdf -> C
+    android.os.Handler handlerTime -> D
+    android.os.Messenger mMesg -> E
+    long count -> i
+    android.content.BroadcastReceiver mGattUpdateReceiver -> F
+    thoth.holter.ecg_010.main.EcgActivity$DrawEcgData dedMii -> j
+    java.util.Date runTime -> G
+    java.util.concurrent.atomic.AtomicBoolean atomicBooleanDraw -> H
     void receiveEcgData(int,int[]) -> a
     void drawEcgData(int) -> e
-    void setHeartRate() -> c
+    void setHeartRate() -> b
     void onCreate(android.os.Bundle) -> onCreate
-    void setDefault() -> d
-    void test() -> b
+    void setDefault() -> c
     void setEcgMode(com.broadchance.ecgview.ECGGLSurfaceView$EcgType,com.broadchance.ecgview.ECGGLSurfaceView$EcgLevel) -> a
-    void startExecutor() -> e
-    void setTime() -> f
-    void endExecutor() -> g
-    android.content.IntentFilter makeGattUpdateIntentFilter() -> h
+    void startExecutor() -> d
+    void setTime() -> e
+    void endExecutor() -> f
+    android.content.IntentFilter makeGattUpdateIntentFilter() -> g
     void onResume() -> onResume
     void onDestroy() -> onDestroy
     void onPause() -> onPause
     boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
-    void returnModeAcitivity() -> i
+    void returnModeAcitivity() -> h
     void setSpeed(android.view.View) -> a
     void setRange(android.view.View) -> b
     void onClick(android.view.View) -> onClick
@@ -25336,30 +25327,21 @@ thoth.holter.ecg_010.main.EcgActivity -> thoth.holter.ecg_010.main.EcgActivity:
 thoth.holter.ecg_010.main.EcgActivity$1 -> thoth.holter.ecg_010.main.a:
     thoth.holter.ecg_010.main.EcgActivity this$0 -> a
     void handleMessage(android.os.Message) -> handleMessage
-thoth.holter.ecg_010.main.EcgActivity$10 -> thoth.holter.ecg_010.main.b:
-    thoth.holter.ecg_010.main.EcgActivity this$0 -> a
-    void run() -> run
-thoth.holter.ecg_010.main.EcgActivity$2 -> thoth.holter.ecg_010.main.c:
+thoth.holter.ecg_010.main.EcgActivity$2 -> thoth.holter.ecg_010.main.b:
     thoth.holter.ecg_010.main.EcgActivity this$0 -> a
     void handleMessage(android.os.Message) -> handleMessage
-thoth.holter.ecg_010.main.EcgActivity$3 -> thoth.holter.ecg_010.main.d:
+thoth.holter.ecg_010.main.EcgActivity$3 -> thoth.holter.ecg_010.main.c:
     thoth.holter.ecg_010.main.EcgActivity this$0 -> a
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
-thoth.holter.ecg_010.main.EcgActivity$4 -> thoth.holter.ecg_010.main.e:
-    thoth.holter.ecg_010.main.EcgActivity this$0 -> a
-    void onReceive(android.content.Context,android.content.Intent) -> onReceive
-thoth.holter.ecg_010.main.EcgActivity$5 -> thoth.holter.ecg_010.main.f:
-    thoth.holter.ecg_010.main.EcgActivity this$0 -> a
-    void handleMessage(android.os.Message) -> handleMessage
-thoth.holter.ecg_010.main.EcgActivity$6 -> thoth.holter.ecg_010.main.g:
+thoth.holter.ecg_010.main.EcgActivity$4 -> thoth.holter.ecg_010.main.d:
     thoth.holter.ecg_010.main.EcgActivity this$0 -> a
     void run() -> run
-thoth.holter.ecg_010.main.EcgActivity$7 -> thoth.holter.ecg_010.main.h:
+thoth.holter.ecg_010.main.EcgActivity$5 -> thoth.holter.ecg_010.main.e:
     thoth.holter.ecg_010.main.EcgActivity this$0 -> a
     void onClick(android.view.View) -> onClick
-    thoth.holter.ecg_010.main.EcgActivity access$0(thoth.holter.ecg_010.main.EcgActivity$7) -> a
-thoth.holter.ecg_010.main.EcgActivity$7$1 -> thoth.holter.ecg_010.main.i:
-    thoth.holter.ecg_010.main.EcgActivity$7 this$1 -> a
+    thoth.holter.ecg_010.main.EcgActivity access$0(thoth.holter.ecg_010.main.EcgActivity$5) -> a
+thoth.holter.ecg_010.main.EcgActivity$5$1 -> thoth.holter.ecg_010.main.f:
+    thoth.holter.ecg_010.main.EcgActivity$5 this$1 -> a
     android.widget.EditText val$editTextValue -> b
     android.widget.EditText val$editTextGridXValue -> c
     android.widget.EditText val$editTextGridDValue -> d
@@ -25369,14 +25351,17 @@ thoth.holter.ecg_010.main.EcgActivity$7$1 -> thoth.holter.ecg_010.main.i:
     android.widget.EditText val$editTextURL -> h
     android.app.Dialog val$dialog -> i
     void onClick(android.view.View) -> onClick
-thoth.holter.ecg_010.main.EcgActivity$8 -> thoth.holter.ecg_010.main.j:
-    thoth.holter.ecg_010.main.EcgActivity this$0 -> a
-    java.lang.String[] val$hexStrs -> b
-    void run() -> run
-thoth.holter.ecg_010.main.EcgActivity$9 -> thoth.holter.ecg_010.main.k:
+thoth.holter.ecg_010.main.EcgActivity$6 -> thoth.holter.ecg_010.main.g:
     thoth.holter.ecg_010.main.EcgActivity this$0 -> a
     void run() -> run
-thoth.holter.ecg_010.main.EcgActivity$EcgData -> thoth.holter.ecg_010.main.l:
+thoth.holter.ecg_010.main.EcgActivity$7 -> thoth.holter.ecg_010.main.h:
+    thoth.holter.ecg_010.main.EcgActivity this$0 -> a
+    void run() -> run
+thoth.holter.ecg_010.main.EcgActivity$DrawEcgData -> thoth.holter.ecg_010.main.i:
+    long firtTime -> a
+    long totalCount -> b
+    thoth.holter.ecg_010.main.EcgActivity this$0 -> c
+thoth.holter.ecg_010.main.EcgActivity$EcgData -> thoth.holter.ecg_010.main.j:
     java.lang.Integer[] queueArray -> a
     int pointNumber -> b
     thoth.holter.ecg_010.main.EcgActivity this$0 -> c
@@ -25407,10 +25392,10 @@ thoth.holter.ecg_010.main.ModeActivity -> thoth.holter.ecg_010.main.ModeActivity
     boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
     android.widget.TextView access$0(thoth.holter.ecg_010.main.ModeActivity) -> a
     android.os.Handler access$1(thoth.holter.ecg_010.main.ModeActivity) -> b
-thoth.holter.ecg_010.main.ModeActivity$1 -> thoth.holter.ecg_010.main.m:
+thoth.holter.ecg_010.main.ModeActivity$1 -> thoth.holter.ecg_010.main.k:
     thoth.holter.ecg_010.main.ModeActivity this$0 -> a
     void handleMessage(android.os.Message) -> handleMessage
-thoth.holter.ecg_010.main.ModeActivity$2 -> thoth.holter.ecg_010.main.n:
+thoth.holter.ecg_010.main.ModeActivity$2 -> thoth.holter.ecg_010.main.l:
     thoth.holter.ecg_010.main.ModeActivity this$0 -> a
     void run() -> run
 thoth.holter.ecg_010.manager.AppApplication -> thoth.holter.ecg_010.manager.AppApplication:
